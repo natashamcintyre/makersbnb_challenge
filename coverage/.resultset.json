@@ -1,16 +1,43 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/app.rb": {
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb_challenge/app.rb": {
         "lines": [
           1,
           null,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
       },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/spec/features/users_can_list_new_space_spec.rb": {
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb_challenge/spec/features/user_names_space_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb_challenge/spec/features/users_can_list_new_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -18,14 +45,15 @@
           null,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1609777712
+    "timestamp": 1609780260
   }
 }
