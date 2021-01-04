@@ -1,0 +1,31 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/app.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/spec/features/users_can_list_new_space_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1609777712
+  }
+}
