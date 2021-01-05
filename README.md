@@ -41,12 +41,25 @@ Suggested uses?\
 user.hire(3)\
 space.hire(user.id=5)
 
-Extras
+## User Story ##
 
 ```
 As a User
 so I can list a space
-I would like to sign up
+I would like to sign up 
+
+As a User 
+so I can see my reserved a spaces
+I would like to be a able to log in 
+
+As a User 
+so I can sceure my account with makebnb 
+I would like to be able to log out
+
+As a User 
+so I can add details to a space  
+I would like to create description 
+
 ```
 Users can list multiple spaces
 
