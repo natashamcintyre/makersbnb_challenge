@@ -26,8 +26,9 @@ class MakersBnb < Sinatra::Base
   
   get '/space/:id/reserve' do 
     p params
-    Space.find(:id).update(available: FALSE)
-    "You have reversed Cottage for one night.:)"
+    @space = Space.find(params[:id])
+    @space.update(available: FALSE)
+    erb :reserve
   end
 
 end
