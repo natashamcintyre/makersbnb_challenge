@@ -5,7 +5,7 @@ feature 'hire a space' do
         expect(page).to have_content "Cottage" 
         expect(page).to have_link "reserve" 
         click_link "reserve" 
-        expect(current_path).to eq 'space/reserve' 
+        expect(current_path).to eq '/space/:id/reserve' 
         expect(page).to have_content "You have reserved Cottage for one night.:)"
     end 
 end 

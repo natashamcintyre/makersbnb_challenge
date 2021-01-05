@@ -2,6 +2,11 @@
 
 # Headline specifications #
 
+Set up
+1. psql postgres
+2. \c makersbnb & makersbnb_test 
+3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE;
+
 MVP
 
 **Any** signed-up **user can list a new space**
