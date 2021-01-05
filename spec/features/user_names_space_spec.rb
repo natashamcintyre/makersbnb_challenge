@@ -7,5 +7,5 @@ feature 'name a new space' do
     click_button 'Submit'
     expect(current_path).to eq '/spaces'
     expect(page).to have_content "Cottage"
-  end
+  end 
 end
