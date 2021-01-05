@@ -21,7 +21,6 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/spaces' do
-    # @home = session[:SpaceName]
     erb :spaces
   end
 end

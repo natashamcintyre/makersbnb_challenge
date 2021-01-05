@@ -29,8 +29,8 @@ Properties | id, name, (description, price per night, available?)
 Methods | list_space,
 
 Space Table
-id | name
--|-
+id | name | available
+-|-|-
 
 Suggested uses?\
 user.hire(3)\
