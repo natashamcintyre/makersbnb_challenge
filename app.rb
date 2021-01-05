@@ -1,28 +1,26 @@
+
 require 'sinatra'
-
-class MakersBnb < Sinatra::Base 
-
-  set :session_secret, 'super secret' 
+require_relative 'database_connection'
+class MakersBnb < Sinatra::Base
+  set :session_secret, 'super secret'
 
   enable :sessions
 
-  get '/' do 
+  get '/' do
     erb :index
   end
 
   get '/spaces/new' do
     erb :spaces_new
-  end 
+  end
 
-  post '/space/save' do 
+  post '/space/save' do
     session[:SpaceName] = params[:SpaceName]
-    
     redirect '/spaces'
-  end  
+  end
 
-  get '/spaces' do 
+  get '/spaces' do
     @home = session[:SpaceName]
-
     erb :spaces
-  end 
+  end
 end
