@@ -15,12 +15,12 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/space/save' do
-    session[:SpaceName] = params[:SpaceName]
+    Space.create(params[:space])
     redirect '/spaces'
   end
 
   get '/spaces' do
-    @home = session[:SpaceName]
+    # @home = session[:SpaceName]
     erb :spaces
   end
 end

@@ -7,7 +7,9 @@
 </head>
     <body>
         <div>
-            <%= @home %>
+            <% Space.all.each do |space| %>
+              <%= space.name %>
+            <% end %>
         </div>
     </body>
 </html>
