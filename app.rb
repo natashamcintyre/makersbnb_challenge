@@ -1,6 +1,7 @@
-
 require 'sinatra'
 require_relative 'database_connection'
+require_relative './lib/space.rb'
+
 class MakersBnb < Sinatra::Base
   set :session_secret, 'super secret'
 
