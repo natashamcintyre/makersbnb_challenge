@@ -6,18 +6,29 @@
           1,
           1,
           1,
-          null,
-          1,
           1,
           null,
           1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
           null,
           1,
           2,
           null,
           null,
+          null,
           1,
-          2,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           1,
@@ -63,14 +74,23 @@
           null
         ]
       },
+      "/Users/benlawrence/Desktop/Projects_Makes/week-5/Projects_MakersBnB/makersbnb_challenge/lib/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/benlawrence/Desktop/Projects_Makes/week-5/Projects_MakersBnB/makersbnb_challenge/spec/setup_test_database.rb": {
         "lines": [
           1,
           null,
           1,
-          7,
+          8,
           null,
-          7,
+          8,
           null
         ]
       },
@@ -106,6 +126,12 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
           null,
           null
         ]
@@ -121,6 +147,7 @@
           1,
           1,
           1,
+          null,
           null,
           null
         ]
@@ -169,6 +196,6 @@
         ]
       }
     },
-    "timestamp": 1609931821
+    "timestamp": 1609947648
   }
 }
