@@ -4,7 +4,7 @@
 
 Set up
 1. psql postgres
-2. \c makersbnb & makersbnb_test 
+2. \c makersbnb & makersbnb_test
 3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE;
 
 MVP
@@ -37,6 +37,15 @@ Space Table
 id | name | available
 -|-|-
 
+Bookings Table
+id | space_id | booked_date | needs user_id here |
+-|-|-|-
+
+
+Calendar setup:
+We found a gem called simple_calendar:
+https://github.com/excid3/simple_calendar
+
 Suggested uses?\
 user.hire(3)\
 space.hire(user.id=5)
@@ -46,19 +55,19 @@ space.hire(user.id=5)
 ```
 As a User
 so I can list a space
-I would like to sign up 
+I would like to sign up
 
-As a User 
+As a User
 so I can see my reserved a spaces
-I would like to be a able to log in 
+I would like to be a able to log in
 
-As a User 
-so I can sceure my account with makebnb 
+As a User
+so I can secure my account with makersbnb
 I would like to be able to log out
 
-As a User 
+As a User
 so I can add details to a space  
-I would like to create description 
+I would like to create description
 
 ```
 Users can list multiple spaces

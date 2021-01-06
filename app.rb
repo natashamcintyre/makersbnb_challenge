@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'simple_calendar'
 require_relative 'database_connection'
 require_relative './lib/space.rb'
 
@@ -23,8 +24,8 @@ class MakersBnb < Sinatra::Base
   get '/spaces' do
     erb :spaces
   end
-  
-  get '/space/:id/reserve' do 
+
+  get '/space/:id/reserve' do
     p params
     @space = Space.find(params[:id])
     @space.update(available: FALSE)
