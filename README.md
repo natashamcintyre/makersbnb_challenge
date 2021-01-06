@@ -37,6 +37,10 @@ Space Table
 id | name | available
 -|-|-
 
+Class | Booking
+-|-
+Properties | id, space_id, date, customer_id
+
 Bookings Table
 id | space_id | booked_date | needs user_id here |
 -|-|-|-
@@ -45,6 +49,8 @@ id | space_id | booked_date | needs user_id here |
 Calendar setup:
 We found a gem called simple_calendar:
 https://github.com/excid3/simple_calendar
+
+Still working on how to actually get it to work!
 
 Suggested uses?\
 user.hire(3)\
