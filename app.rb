@@ -1,7 +1,7 @@
 require 'sinatra'
-require 'simple_calendar'
 require_relative 'database_connection'
 require_relative './lib/space.rb'
+require_relative './lib/booking.rb'
 
 class MakersBnb < Sinatra::Base
   set :session_secret, 'super secret'
@@ -26,10 +26,19 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/space/:id/reserve' do
-    p params
     @space = Space.find(params[:id])
     @space.update(available: FALSE)
     erb :reserve
   end
 
+  post '/space/:id/confirm' do
+    p params
+    @space = Space.find(params[:id])
+    @booking = Booking.create(params[:booking])
+    redirect '/ms'
+  end
+
+  get '/ms' do
+    "confirmed"
+  end
 end
