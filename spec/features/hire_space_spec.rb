@@ -14,9 +14,10 @@ feature 'hire a space' do
         visit '/spaces'
         click_link "reserve"
         expect(page).to have_content "Cottage"
-        expect(page).to have a calendar
+        expect(page).to have_field 'Start date:', type: 'date'
 
-        click date
+        fill_in 'Start date:', with: Date.today.strftime("%Y-%m-%d")
+        
         click_button 'Send Reservation Request'
 
         expect(page).to have_content 'You have requested to reserve Cottage on date'

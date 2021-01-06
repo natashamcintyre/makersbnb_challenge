@@ -8,17 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <p> Check availability below </p>
+    <p> Check availability below for <%= @space.name %> </p>
 
     <p>Space detail stuff</p>
 
- <form action="/space/<%=@space.id%>/confirm" method='post'>      
+ <form action="/space/<%=@space.id%>/confirm" method='post'>
         <label for="booking_night">Start date:</label>
 
         <input type="date" id="booking_night" name="booking[booked_date]"
             value="YYYY-MM-DD"
             min=<%=Date.today%> max="2023-12-31">
-        <input type="submit" value="Submit">
+        <input type="hidden" name="booking[space_id]" value="<%= @space.id %>" >
+        <input type="submit" value="Send Reservation Request">
    </form>
 </body>
 </html>

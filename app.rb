@@ -35,6 +35,7 @@ class MakersBnb < Sinatra::Base
     p params
     @space = Space.find(params[:id])
     @booking = Booking.create(params[:booking])
+    p @booking
     redirect '/ms'
   end
 
