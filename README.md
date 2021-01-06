@@ -5,7 +5,11 @@
 Set up
 1. psql postgres
 2. \c makersbnb & makersbnb_test 
-3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE;
+3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE; 
+
+Set up user table
+
+4. CREATE TABLE users(id SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(60), password VARCHAR(140)); 
 
 MVP
 
