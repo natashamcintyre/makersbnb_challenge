@@ -7,18 +7,19 @@
 </head>
     <body>
         <form action='/signup' method='post'> 
-            <label for="name">Username</label>
-            <input type="text"> 
+            <label for="username">Username</label>
+            <input type="text" name='user[username]'> 
 
             <label for="email">Email</label> 
-            <input type="text"> 
+            <input type="text" name="user[email]"> 
 
             <label for="name">Name</label>
-            <input type="text"> 
+            <input type="text" name="user[name]"> 
 
             <label for="password">Password</label> 
-            <input type="text"> 
+            <input type="text" name="user[password]">  
+
+            <input type="submit" value="Submit">
         <form> 
-            <a href="/login">Submit</a>
     </body>
 </html>

@@ -1,6 +1,7 @@
 require 'sinatra'
 require_relative 'database_connection'
-require_relative './lib/space.rb'
+require_relative './lib/space.rb'  
+require_relative './lib/user.rb'
 
 class MakersBnb < Sinatra::Base
   set :session_secret, 'super secret'
@@ -11,8 +12,18 @@ class MakersBnb < Sinatra::Base
     erb :index
   end  
 
-  get '/signup' do 
+  get '/signup' do  
     erb :signup
+  end   
+
+
+  post '/signup' do 
+    User.create(params[:user]) 
+    redirect '/login'
+  end   
+
+  get '/login' do 
+    erb :login
   end 
 
   get '/spaces/new' do
