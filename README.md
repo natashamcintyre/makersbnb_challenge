@@ -9,7 +9,7 @@ Set up
 
 Set up user table
 
-4. CREATE TABLE users(id SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(60), password VARCHAR(140)); 
+4. CREATE TABLE users(id SERIAL PRIMARY KEY, name VARCHAR(30) NOT NULL, email VARCHAR(60) NOT NULL, password VARCHAR(140) NOT NULL, username VARCHAR(30) NOT NULL);  
 
 MVP
 
