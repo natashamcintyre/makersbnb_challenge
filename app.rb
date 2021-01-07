@@ -1,4 +1,5 @@
-require 'sinatra'
+require 'sinatra' 
+require 'sinatra/flash'
 require_relative 'database_connection'
 
 require_relative './lib/space.rb'  
@@ -7,10 +8,12 @@ require_relative './lib/user.rb'
 require_relative './lib/booking.rb'
 
 
-class MakersBnb < Sinatra::Base
+class MakersBnb < Sinatra::Base 
   set :session_secret, 'super secret'
 
   enable :sessions
+
+  register Sinatra::Flash
 
   get '/' do
     erb :index
@@ -26,8 +29,21 @@ class MakersBnb < Sinatra::Base
     redirect '/'
   end   
 
-  get '/login' do 
+
+  #login 
+
+  get '/login' do  
     erb :login
+  end  
+
+  post '/login/new' do 
+    user = User.find_by(username: params[:username]&.authenticate(params[:password]))
+    if user != nil
+      redirect '/spaces'
+    else 
+      flash[:notice]="Username or password incorrect. Please try again." 
+      redirect '/login'
+    end
   end 
 
   get '/spaces/new' do
