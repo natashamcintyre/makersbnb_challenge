@@ -1,3 +1,4 @@
+
 feature 'hire a space' do
     scenario 'user can hire a space for the night' do
         space = Space.create(name: "Cottage")
@@ -23,3 +24,4 @@ feature 'hire a space' do
         expect(page).to have_content "You have requested to reserve #{space.name} on #{Date.today}"
     end
 end
+
