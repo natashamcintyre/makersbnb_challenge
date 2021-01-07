@@ -12,7 +12,5 @@ feature 'add user' do
         expect(page).to have_content 'Email' 
         expect(page).to have_content 'Name'  
         expect(page).to have_content 'Password' 
-        expect(page).to have_button 'Submit'  
-        
     end  
 end 
