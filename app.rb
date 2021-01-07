@@ -37,7 +37,6 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/booking/:id/confirmation' do
-    p params
     @booking = Booking.find(params[:id])
     erb :confirm_booking
   end
