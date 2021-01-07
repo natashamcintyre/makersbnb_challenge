@@ -7,6 +7,7 @@ Set up
 
 2. \c makersbnb & makersbnb_test 
 3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE; 
+4. ALTER TABLE spaces ADD owner_id INT, ADD FOREIGN KEY(owner_id) REFERENCES owners(id); (for owner)
 
 MVP
 
@@ -27,6 +28,10 @@ I would like to name it
 As a User
 so I can rent a space
 I would like to hire a space for one night
+
+As a User
+so I can control my space 
+I would like the listed space to belong to me
 ```
 
 Class | Space

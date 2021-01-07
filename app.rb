@@ -5,6 +5,7 @@ require_relative './lib/space.rb'
 require_relative './lib/user.rb'
 
 require_relative './lib/booking.rb'
+require_relative './lib/owner.rb'
 
 
 class MakersBnb < Sinatra::Base
