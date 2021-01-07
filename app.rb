@@ -14,7 +14,7 @@ class MakersBnb < Sinatra::Base
   enable :sessions
 
   register Sinatra::Flash
-
+  
   get '/' do
     erb :index
   end  
@@ -23,25 +23,24 @@ class MakersBnb < Sinatra::Base
     erb :signup
   end   
 
-
   post '/signup/new' do 
     User.create(params[:user]) 
     redirect '/'
   end   
 
-
-  #login 
-
-  get '/login' do  
+  get '/login' do 
     erb :login
   end  
 
   post '/login/new' do 
-    user = User.find_by(username: params[:username]&.authenticate(params[:password]))
-    if user != nil
+    p params
+   
+    user = User.find(username: params[:username]&.authenticate(params[:password]))
+    if user 
+      session[:username] = user.username
       redirect '/spaces'
     else 
-      flash[:notice]="Username or password incorrect. Please try again." 
+      flash[:error] = "Username or password incorrect. Please try again." 
       redirect '/login'
     end
   end 
