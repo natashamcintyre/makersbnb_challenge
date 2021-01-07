@@ -23,7 +23,7 @@ class MakersBnb < Sinatra::Base
 
   post '/signup/new' do 
     User.create(params[:user]) 
-    redirect '/login'
+    redirect '/'
   end   
 
   get '/login' do 

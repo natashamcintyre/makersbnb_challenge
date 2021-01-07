@@ -17,6 +17,6 @@ feature 'add user' do
         expect(page).to have_content 'Password'  
         fill_in "user[password]", with: "clond" 
         click_button 'Submit' 
-        expect(current_path).to eq '/login'
+        expect(current_path).to eq '/'
     end  
 end 
