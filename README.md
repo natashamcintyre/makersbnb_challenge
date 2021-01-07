@@ -7,6 +7,7 @@ Set up
 
 2. \c makersbnb & makersbnb_test 
 3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE; 
+5. ALTER TABLE users RENAME COLUMN password TO password_digest;
 
 MVP
 

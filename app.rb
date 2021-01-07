@@ -35,7 +35,7 @@ class MakersBnb < Sinatra::Base
   post '/login/new' do 
     p params
    
-    user = User.find(username: params[:username]&.authenticate(params[:password]))
+    user = User.find_by(username: params[:username])&.authenticate(params[:password])
     if user 
       session[:username] = user.username
       redirect '/spaces'

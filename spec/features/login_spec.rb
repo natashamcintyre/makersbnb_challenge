@@ -10,6 +10,6 @@ feature 'User login' do
         fill_in "user[password]", with: "clond" 
             expect(page).to have_button('Login') 
         click_button 'Login' 
-            expect(current_path).to eq('/login/new')
+            expect(current_path).to eq('/login')
     end 
 end 
