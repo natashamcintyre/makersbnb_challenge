@@ -32,14 +32,13 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/space/:id/confirm' do
-    p params
-    @space = Space.find(params[:id])
     @booking = Booking.create(params[:booking])
-    p @booking
-    redirect '/ms'
+    redirect "/booking/#{@booking.id}/confirmation"
   end
 
-  get '/ms' do
-    "confirmed"
+  get '/booking/:id/confirmation' do
+    p params
+    @booking = Booking.find(params[:id])
+    erb :confirm_booking
   end
 end

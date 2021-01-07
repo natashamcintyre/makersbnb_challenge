@@ -20,6 +20,6 @@ feature 'hire a space' do
         
         click_button 'Send Reservation Request'
 
-        expect(page).to have_content 'You have requested to reserve Cottage on date'
+        expect(page).to have_content "You have requested to reserve #{space.name} on #{Date.today}"
     end
 end
