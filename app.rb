@@ -1,9 +1,8 @@
 require 'sinatra'
 require_relative 'database_connection'
 
-require_relative './lib/space.rb'  
+require_relative './lib/space.rb'
 require_relative './lib/user.rb'
-
 require_relative './lib/booking.rb'
 require_relative './lib/owner.rb'
 
@@ -15,21 +14,38 @@ class MakersBnb < Sinatra::Base
 
   get '/' do
     erb :index
-  end  
+  end
 
-  get '/signup' do  
+  get '/signup' do
     erb :signup
-  end   
+  end
 
-
-  post '/signup/new' do 
-    User.create(params[:user]) 
+  post '/signup/new' do
+    User.create(params[:user])
     redirect '/login'
-  end   
+  end
 
-  get '/login' do 
+  get '/owner/signup' do
+    erb :owner_signup
+  end
+
+  post '/owner/new' do
+    owner = Owner.create(params[:owner])
+    session[:owner_id] = owner.id
+    redirect "/owner/#{owner.id}"
+  end
+
+  get '/owner/login' do
+    erb :owner_login
+  end
+
+  get '/owner/:id' do
+    erb :owner_space
+  end
+
+  get '/login' do
     erb :login
-  end 
+  end
 
   get '/spaces/new' do
     erb :spaces_new
