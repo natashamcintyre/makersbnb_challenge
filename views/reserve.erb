@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
-</head>
+</head> 
 <body>
+    <header>  
+        <div>  
+            <h2>Book now but probably cancel because Corona</h2>
+        </div> 
+    </header>  
 
-    <p> Check availability below for <%= @space.name %> </p>
+    <nav>  
+        <div>  
+            <a href="/spaces">Return to Spaces</a>
+        </div> 
+    </nav> 
 
+    <div class="date">   
+        <div> 
+
+    <h3> Check availability below for <%= @space.name %> </h3>
             <%= @space.description %> <br>
             £<%= @space.price %> per night <br>
  <form action="/space/<%=@space.id%>/confirm" method='post'>
@@ -19,9 +31,12 @@
         <input type="date" id="booking_night" name="booking[booked_date]"
             value="YYYY-MM-DD"
             min=<%=Date.today%> max="2023-12-31">
-        <input type="hidden" name="booking[space_id]" value="<%= @space.id %>" >
-        <input type="submit" value="Send Reservation Request">
-   </form>
+        <input type="hidden" name="booking[space_id]" value="<%= @space.id %>" ><br>
+        <input type="submit" value="Send Reservation Request"> 
+
+        </form> 
+        </div>
+    </div> 
 
 </body>
 </html>

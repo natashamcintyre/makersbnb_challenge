@@ -1,10 +1,53 @@
-/* *= require simple_calendar */
-/* Code above needed to style calendar? */
-
 
 body {
-  background-color: red;
+  margin: 0; 
+  padding: 0; 
+} 
+
+header { 
+  width: 100%; 
+  background-color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 16px;
+}  
+
+header div {
+  padding: 10px 10px; 
+  text-align: center;
+} 
+
+nav {
+  width: 100%; 
+  height: 60px; 
+  background-color: cadetblue; 
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center;
+} 
+
+nav div{
+  padding: 0 20px;
+} 
+
+nav div a{ 
+  padding: 5px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  color: black; 
+  text-decoration: black;
+} 
+
+nav div a:hover {
+  background-color: white; 
+  border-radius: 10px;
 }
+
+/* label calender */
+
+
+
 label {
   display: block;
   font: 1rem 'Fira Sans', sans-serif;
@@ -13,4 +56,22 @@ label {
 input,
 label {
   margin: .4rem 0;
+} 
+
+/* date */ 
+
+.date {
+  display: flex; 
+  width: 100%; 
+  height: 500px; 
+  justify-content: center; 
+  align-items: center;
+} 
+
+.date div {
+  text-align: center; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  padding: 10px 10px; 
+  border: solid 5px cadetblue; 
+  border-radius: 20px;
 }

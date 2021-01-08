@@ -2,23 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/spaces.css">
     <title>Document</title>
 </head>
-    <body> 
-         <a href= '/spaces/new'> List New Space </a>
-      <form action="/logout" method="get"> 
-          <input type="submit" value="Logout">
-      </form> 
-        <div>
-            <% Space.all.each do |space| %>
-              <ul>
-                <%= space.name %><br>
-                <%= space.description %> <br>
-                £ <%= space.price %> per night <br>
-              </ul>
-              <a href="/space/<%=space.id%>/reserve">reserve</a>
-            <% end %>
-        </div>
+    <body>  
+    <header>  
+          <div>  
+            <h2>Book now but probably cancel because Corona</h2>
+          </div>
+    </header>  
+
+  <nav> 
+    <div>
+      <% if session[:owner_id]%>
+         <a href= '/spaces/new'> List New Space </a> 
+      <% end %> 
+    </div>  
+
+    <div>  
+      <a href="/logout">Log out</a>
+    </div>  
+  </nav>
+
+            <div class="space"> 
+            <% Space.all.each do |space| %> 
+                <div class="space_item">
+                <ul>
+                  <%= space.name %><br>
+                  <%= space.description %> <br>
+                  £ <%= space.price %> per night <br> 
+                  Added by <%= space.owner %> <br>
+                  <a href="/space/<%=space.id%>/reserve">reserve</a> 
+                </ul>  
+                </div>
+            <% end %>  
+            </div> 
     </body>
 </html>
