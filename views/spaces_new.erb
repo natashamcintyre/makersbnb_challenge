@@ -7,10 +7,15 @@
 </head>
     <body>
         <div>
-            <form action="/space/save" method='post'>
-                <label for="space[name]"> Add name of property </label>
-                    <input type="text" name='space[name]'>
-                    <input type="submit" value="Submit">
+            <form action="/space/save" method='post'> 
+                <h2>List new space</h2>
+                <label for="space[name]"> Name </label> 
+                    <input type="text" name='space[name]' > 
+                <label for="space[description]">description</label> 
+                    <input type="text" name="space[description]">  
+                <label for="space[price]"> Price | per night </label> 
+                    <input type="text" name="space[price]" > 
+                    <input type="submit" value="Submit"> 
             </form>
         </div>
     </body>

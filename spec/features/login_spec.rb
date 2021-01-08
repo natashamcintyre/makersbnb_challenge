@@ -5,9 +5,9 @@ feature 'User login' do
         click_link 'Login' 
             expect(current_path).to eq ('/login') 
             expect(page).to have_content 'Username'  
-        fill_in "user[username]", with: "Ben" 
+        fill_in "username", with: "Ben" 
             expect(page).to have_content 'Password' 
-        fill_in "user[password]", with: "clond" 
+        fill_in "password", with: "clond" 
             expect(page).to have_button('Login') 
         click_button 'Login' 
             expect(current_path).to eq('/login')

@@ -12,7 +12,9 @@
         <div>
             <% Space.all.each do |space| %>
               <ul>
-                <%= space.name %>
+                <%= space.name %> 
+                <%= space.description %> 
+                <%= space.price %>
               </ul>
               <a href="/space/<%=space.id%>/reserve">reserve</a>
             <% end %>

@@ -1,8 +1,8 @@
 feature 'add user' do 
     scenario 'user can create an account' do 
         visit '/' 
-        expect(page).to have_link 'create account' 
-        click_link 'create account'  
+        expect(page).to have_link 'Create Account' 
+        click_link 'Create Account'  
         expect(current_path).to eq '/signup' 
     end  
 

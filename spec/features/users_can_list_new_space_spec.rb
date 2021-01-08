@@ -23,7 +23,7 @@ feature 'list a new space' do
 
     expect(page).to have_content 'Cottage'
     expect(page).to have_content 'Quaint and quiet'
-    expect(pgae).to have_content '£100 per night'
+    expect(page).to have_content '100'
 
   end
 end
