@@ -78,10 +78,14 @@ feature 'list a new space' do
 
   scenario 'listed space is associated with user who listed it' do
     owner = Owner.create(name: "Will", username: "will123", password: "p123", email: "will@me.com")
+    visit '/owner/login'
+    fill_in 'username', with: owner.username
+    fill_in 'password', with: owner.password
+    click_button 'Log In'
     visit '/spaces/new'
-    expect(page).to have_field("space[owner_id]")
+    # expect(page).to have_field("space[owner_id]")
     fill_in "space[name]", with: "Cottage"
-    fill_in "space[owner_id]", with: owner.id
+    # fill_in "space[owner_id]", with: owner.id
     click_on 'Submit'
 
     expect(current_path).to eq '/spaces'
