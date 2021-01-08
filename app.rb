@@ -39,6 +39,12 @@ class MakersBnb < Sinatra::Base
     erb :owner_login
   end
 
+  post '/owner/login/new' do
+    owner = Owner.find_by(username: params[:username])&.authenticate(params[:password])
+    session[:owner_id] = owner.id
+    redirect "/owner/#{owner.id}"
+  end
+
   get '/owner/:id' do
     erb :owner_space
   end

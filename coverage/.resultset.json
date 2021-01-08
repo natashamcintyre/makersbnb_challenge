@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/app.rb": {
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/app.rb": {
         "lines": [
           1,
           1,
@@ -22,38 +22,7 @@
           null,
           null,
           1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
+          2,
           null,
           null,
           1,
@@ -66,86 +35,155 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          null,
-          null,
           1,
-          0,
-          0,
-          null,
-          null,
           1,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/database_connection.rb": {
-        "lines": [
           1,
+          null,
           null,
           1,
           1,
           null,
-          0,
-          null
-        ]
-      },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/lib/space.rb": {
-        "lines": [
-          1,
           null,
           1,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/lib/user.rb": {
-        "lines": [
           1,
           null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/lib/booking.rb": {
-        "lines": [
-          1,
           null,
           1,
+          3,
           null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/lib/owner.rb": {
-        "lines": [
-          1,
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/spec/setup_test_database.rb": {
-        "lines": [
+          null,
+          null,
           1,
+          3,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
           null,
           1,
           4,
           null,
-          4,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/Student/Projects/Makers-Week5/makersbnb_challenge/spec/features/owners_can_list_new_space_spec.rb": {
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/database_connection.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/lib/space.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/lib/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/lib/booking.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/lib/owner.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/setup_test_database.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          12,
+          null,
+          12,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/features/hire_space_spec.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/features/owners_can_list_new_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -177,26 +215,16 @@
           1,
           1,
           1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
           null,
           null,
           null,
           1,
           1,
           null,
-          1,
           null,
-          1,
           null,
-          1,
-          1,
+          null,
+          null,
           null,
           1,
           1,
@@ -205,28 +233,46 @@
           null,
           1,
           null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           1,
           null,
           1,
           1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
           1,
           null,
           null,
@@ -247,12 +293,98 @@
           null,
           null,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/features/sign_up_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/features/user_names_space_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/unit/booking_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/unit/date_base_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/willdixon/MakersProjects/Week5/MakersBnB/makersbnb2/makersbnb_challenge/spec/unit/space_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1610103149
+    "timestamp": 1610104855
   }
 }
