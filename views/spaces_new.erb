@@ -15,6 +15,7 @@
                     <input type="text" name="space[description]">  
                 <label for="space[price]"> Price | per night </label> 
                     <input type="text" name="space[price]" > 
+                    <input type="hidden" name='space[owner_id]' value="<%=session[:owner_id]%>"> 
                     <input type="submit" value="Submit"> 
             </form>
         </div>
