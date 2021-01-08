@@ -55,7 +55,7 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/spaces' do
-    erb :spaces
+    erb :spaces 
   end
 
   get '/space/:id/reserve' do
@@ -72,5 +72,10 @@ class MakersBnb < Sinatra::Base
   get '/booking/:id/confirmation' do
     @booking = Booking.find(params[:id])
     erb :confirm_booking
-  end
+  end 
+
+  get '/logout' do  
+    session.clear 
+    redirect "/"
+  end 
 end
