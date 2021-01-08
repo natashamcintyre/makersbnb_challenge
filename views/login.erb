@@ -2,18 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
     <title>Document</title>
 </head>
-    <body>
-        <form action="/login/new" method="post"> 
-            <label for="username">Username</label>
-            <input type="text" name='username'>
-
-            <label for="password">Password</label> 
-            <input type="text" name="password">
-
-            <input type="submit" name="Login">
-        </form>
+    <body> 
+        <header>  
+            <div>  
+                <h2>Makersbnb</h2>
+            </div>
+        </header> 
+        <nav>  
+            <div>  
+                <p>Login Page<p>
+            </div>
+        </nav>
+            <form action="/login/new" method="post" class="Login">   
+                <div id="Login_username">
+                    <label for="username">Username</label>
+                    <input type="text" name='username'>
+                </div> 
+                <div id="Login_password">
+                    <label for="password">Password</label> 
+                    <input type="text" name="password">
+                </div> 
+                <div id="Login_submit">
+                    <input type="submit" name="Login"> 
+                </div> 
+            </form>  
+            <footer>  
+            
+            </footer>
     </body>
 </html>
