@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-   <p> You have requested to reserve <%=@booking.space.name%> on <%=@booking.booked_date%>  </p>
+  <a href= '/spaces'> View Spaces </a> <br>
+
+  <form action="/logout" method="get"> 
+          <input type="submit" value="Logout">
+      </form> 
+   <p> You have requested to reserve <%=@booking.space.name%> on <%=@booking.booked_date%>  </p> <br>
+
+   <p> Enjoy your stay! </p>
+
+
 </body>
 </html>
