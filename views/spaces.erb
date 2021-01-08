@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
     <body> 
+         <a href= '/spaces/new'> List New Space </a>
       <form action="/logout" method="get"> 
           <input type="submit" value="Logout">
       </form> 
         <div>
             <% Space.all.each do |space| %>
               <ul>
-                <%= space.name %> 
-                <%= space.description %> 
-                <%= space.price %>
+                <%= space.name %><br>
+                <%= space.description %> <br>
+                £ <%= space.price %> per night <br>
               </ul>
               <a href="/space/<%=space.id%>/reserve">reserve</a>
             <% end %>

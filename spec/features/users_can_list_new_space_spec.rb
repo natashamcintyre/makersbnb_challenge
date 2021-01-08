@@ -1,6 +1,6 @@
 feature 'list a new space' do
   scenario 'user can set up a new space for others to rent' do
-    visit '/'
+    visit '/spaces'
     # NEEDS CHANGING WHEN USER SIGN IN IS IMPLEMENTED
     expect(page).to have_link 'List New Space'
 
