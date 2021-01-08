@@ -11,6 +11,7 @@ Set up
 6. ALTER TABLE spaces ADD price NUMERIC;
 7. add owners table (migrations)
 8. ALTER TABLE spaces ADD owner_id INT, ADD FOREIGN KEY(owner_id) REFERENCES owners(id);
+9. CREATE TABLE owners(id SERIAL PRIMARY KEY, name VARCHAR(30) NOT NULL, email VARCHAR(60) NOT NULL, password_digest VARCHAR(140) NOT NULL, username VARCHAR(30) NOT NULL); 
 
 MVP
 
