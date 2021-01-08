@@ -8,6 +8,7 @@ Set up
 2. \c makersbnb & makersbnb_test
 3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE;
 4. add owners table (migrations)
+5. ALTER TABLE spaces ADD owner_id INT, ADD FOREIGN KEY(owner_id) REFERENCES owners(id); (for owner)
 
 MVP
 
