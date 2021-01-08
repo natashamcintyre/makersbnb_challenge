@@ -11,8 +11,8 @@
 
     <p> Check availability below for <%= @space.name %> </p>
 
-    <p>Space detail stuff</p>
-
+            <%= @space.description %> <br>
+            £<%= @space.price %> per night <br>
  <form action="/space/<%=@space.id%>/confirm" method='post'>
         <label for="booking_night">Start date:</label>
 
