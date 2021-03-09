@@ -4,8 +4,8 @@
 
 Set up
 1. psql postgres
-2. \c makersbnb & makersbnb_test 
-3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE; 
+2. \c makersbnb & makersbnb_test
+3. ALTER TABLE spaces ADD available BOOLEAN DEFAULT TRUE;
 4. ALTER TABLE users RENAME COLUMN password TO password_digest;
 5. ALTER TABLE spaces ADD description VARCHAR(250);
 6. ALTER TABLE spaces ADD price NUMERIC;
@@ -44,17 +44,24 @@ Properties | id, name, (description, price per night, available?)
 Methods | list_space,
 
 Space Table
-id | name | available
--|-|-
+id | name | description | price | available | owner_id
+-|-|-|-|-|-
 
 Class | Booking
 -|-
 Properties | id, space_id, date, customer_id
 
 Bookings Table
-id | space_id | booked_date | needs user_id here |
+id | space_id | booked_date | user_id |
 -|-|-|-
 
+Owners Table
+id | name | email | username | password_digest
+-|-|-|-|-
+
+Users Table
+id | name | email | username | password_digest
+-|-|-|-|-
 
 Calendar setup:
 We found a gem called simple_calendar:
