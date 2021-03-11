@@ -1,5 +1,7 @@
 ## TEAM OREO ##
 
+An imitation of Airbnb, our first team project at Makers. This was our team's attempt in 1 week, a learning opportunity with much scope for improvement and by no means a final product.
+
 # Headline specifications #
 
 Set up
